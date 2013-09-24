@@ -3,7 +3,7 @@
 
 ## What is this?
 
-A very simple plug-in for XCode that adds a short cut menu option to the File menu which opens a new terminal window in the current project.
+A very simple plug-in for XCode that adds a short cut menu option to the File menu which opens a new iTerm window in the current project.
 
 ## How to use it?
 
