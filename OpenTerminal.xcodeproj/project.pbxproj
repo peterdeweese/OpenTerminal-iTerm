@@ -239,10 +239,11 @@
 		AF0E559D17DB94240086F880 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = $HOME;
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTerminal/OpenTerminal-Prefix.pch";
 				INFOPLIST_FILE = "OpenTerminal/OpenTerminal-Info.plist";
@@ -255,10 +256,11 @@
 		AF0E559E17DB94240086F880 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = $HOME;
-				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenTerminal/OpenTerminal-Prefix.pch";
 				INFOPLIST_FILE = "OpenTerminal/OpenTerminal-Info.plist";

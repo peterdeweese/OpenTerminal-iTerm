@@ -40,7 +40,6 @@ static OpenTerminal *mySharedPlugin = nil;
         [openTerminalItem setKeyEquivalentModifierMask: NSShiftKeyMask | NSCommandKeyMask];
         [openTerminalItem setTarget:self];
         [[viewMenuItem submenu] addItem:openTerminalItem];
-        [openTerminalItem release];
     }
 }
 
@@ -67,7 +66,6 @@ static OpenTerminal *mySharedPlugin = nil;
         NSLog(@"Error running code: %@", [errorDict description]);
     }
     
-    [aScript release];
 }
 
 
