@@ -3,6 +3,9 @@
 -- Mobile Genius LLC
 -- September 1, 2013
 --
+-- Modified to use iTerm by Peter DeWeese
+-- September 25, 2013
+--
 
 tell application "Xcode"
 	set my_work_space to active workspace document
@@ -18,9 +21,17 @@ tell application "Xcode"
 	set response to do shell script command
 	
 	-- open a new terminal window 
-	tell application "Terminal"
+	tell application "iTerm"
 		activate
-		do script "cd " & quoted form of response
+        
+        display alert "1"
+        set _term to make new terminal
+        tell _term
+            launch session "Default"
+            set _session to current session
+            tell _session
+                write text "cd " & quoted form of response
+            end tell
+        end tell
 	end tell
-	
 end tell
