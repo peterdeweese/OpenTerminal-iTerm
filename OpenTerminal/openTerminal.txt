@@ -24,7 +24,6 @@ tell application "Xcode"
 	tell application "iTerm"
 		activate
         
-        display alert "1"
         set _term to make new terminal
         tell _term
             launch session "Default"
